@@ -1,0 +1,82 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ProfilPribadi" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/gray</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/orange_light</item>
+        <item name="colorOnSecondary">@color/black</item>
+    </style>
+
+    <!-- text -->
+    <style name="TextContent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+    <style name="TextContent.HeadlineMedium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">80dp</item>
+        <item name="android:textAppearance">@style/TextAppearance.Material3.HeadlineMedium</item>
+    </style>
+    <!--    text title-->
+    <style name="TextContent.TitleMedium">
+        <item name="android:textAppearance">@style/TextAppearance.Material3.TitleMedium</item>
+    </style>
+    <style name="TextContent.TitleMedium.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextContent.TitleMedium.Bold.Center">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">16dp</item>
+    </style>
+    <style name="TextContent.TitleMedium.Bold.MarginTop">
+        <item name="android:layout_marginTop">30dp</item>
+    </style>
+    <!--    text body-->
+    <style name="TextContent.BodyMedium">
+        <item name="android:textAppearance">@style/TextAppearance.Material3.BodyMedium</item>
+        <item name="android:justificationMode">inter_word</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">0dp</item>
+    </style>
+    <style name="TextContent.BodyMedium.MarginAll">
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginRight">28dp</item>
+        <item name="android:layout_marginLeft">28dp</item>
+    </style>
+
+    <!--    button-->
+    <style name="GeneralButton">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="backgroundTint">@color/dark_blue</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="GeneralButton.MarginTop">
+        <item name="android:layout_marginTop">16dp</item>
+    </style>
+
+    <!--    image-->
+    <style name="RoundedCornerImage">
+        <item name="android:layout_width">250dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="CircleImage">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">200dp</item>
+        <item name="android:layout_marginTop">80dp</item>
+        <item name="android:layout_marginBottom">48dp</item>
+    </style>
+
+    <style name="Theme.ProfilPribadi" parent="Base.Theme.ProfilPribadi" />
+</resources>

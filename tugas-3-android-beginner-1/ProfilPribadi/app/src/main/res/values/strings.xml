@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Profil Bintang</string>
+    <string name="main_title">Profil Bintang</string>
+    <string name="foto_bintang">foto-bintang</string>
+    <string name="sambutan_title">Pengantar singkat tentang aku</string>
+    <string name="sambutan_content">Hai! nama aku Bintang Harida Ramadhan, kesibukan aku sekarang kuliah di Prodi Informatika Universias Sebelas Maret.</string>
+    <string name="go_to_profile">Go To Profile</string>
+    <string name="go_to_my_github">Go To My Github</string>
+    <string name="back">Back</string>
+    <string name="share">Share</string>
+</resources>

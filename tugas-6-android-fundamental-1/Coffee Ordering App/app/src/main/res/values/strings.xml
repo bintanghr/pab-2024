@@ -1,0 +1,148 @@
+<resources>
+    <string name="app_name">Coffee Ordering App</string>
+    <string name="coffee">Nama Kopi</string>
+    <string name="description">Deskripsi</string>
+    <string name="beverages">beverages</string>
+    <string name="food">food</string>
+    <string name="foto_menu">foto_menu</string>
+    <string name="coffee_price">Rp 50.000</string>
+    <string name="menu_name">Menu Name</string>
+    <string name="coffee_description">coffee description</string>
+    <string name="add_to_cart">Add To Cart</string>
+    <string name="back_button">back button</string>
+    <string name="grid_icon">grid icon</string>
+    <string name="_4_5">4.5 ⭐</string>
+
+    <!--    beverages-->
+    <string-array name="coffee_name">
+        <item>Espresso</item>
+        <item>Americano</item>
+        <item>Latte</item>
+        <item>Cappuccino</item>
+        <item>Mocha</item>
+        <item>Macchiato</item>
+        <item>Flat White</item>
+        <item>Affogato</item>
+        <item>Frappuccino</item>
+        <item>Long Black</item>
+    </string-array>
+
+    <string-array name="coffee_price">
+        <item>20.000</item>
+        <item>25.000</item>
+        <item>35.000</item>
+        <item>32.000</item>
+        <item>30.000</item>
+        <item>37.000</item>
+        <item>33.000</item>
+        <item>34.000</item>
+        <item>35.000</item>
+        <item>25.000</item>
+    </string-array>
+
+    <string-array name="coffee_desc">
+        <item><![CDATA[Minuman kopi klasik yang diseduh dengan mengekstrak kopi dengan air panas di bawah tekanan tinggi. Memiliki rasa yang kental dan kuat.]]></item>
+        <item><![CDATA[Espresso yang dicampur dengan air panas. Memiliki rasa yang lebih ringan dibandingkan espresso.]]></item>
+        <item><![CDATA[Campuran espresso dengan susu panas dan sedikit busa susu di atasnya. Memiliki rasa yang lembut dan creamy.]]></item>
+        <item><![CDATA[Campuran espresso dengan susu panas dan banyak busa susu di atasnya. Memiliki rasa yang creamy dan tekstur yang lebih ringan dibandingkan latte.]]></item>
+        <item><![CDATA[Campuran espresso dengan susu panas, cokelat, dan kadang-kadang ditambahkan dengan whipped cream di atasnya. Memiliki rasa yang manis dan cokelat.]]></item>
+        <item><![CDATA[Espresso dengan sedikit susu atau busa susu di atasnya. Memiliki rasa yang kuat dengan sentuhan susu.]]></item>
+        <item><![CDATA[Campuran espresso dengan susu panas, tetapi dengan lebih sedikit busa susu daripada cappuccino. Memiliki rasa yang kaya dan lembut.]]></item>
+        <item><![CDATA[Scoop es krim vanilla yang disiram dengan shot espresso panas di atasnya. Menggabungkan rasa kopi yang kuat dengan manisnya es krim.]]></item>
+        <item><![CDATA[Minuman kopi dingin yang dibuat dengan mencampur espresso atau kopi dengan es, susu, sirup, dan kadang-kadang ditambahkan dengan whipped cream di atasnya. Biasanya memiliki rasa yang manis dan segar.]]></item>
+        <item><![CDATA[Mirip dengan Americano, tetapi espresso dituangkan di atas air panas. Ini mempertahankan krema dari espresso dengan menambahkan air panas di bawahnya.]]></item>
+    </string-array>
+
+    <integer-array name="coffee_img">
+        <item>@drawable/espresso</item>
+        <item>@drawable/americano</item>
+        <item>@drawable/latte</item>
+        <item>@drawable/cappuccino</item>
+        <item>@drawable/mocha</item>
+        <item>@drawable/macchiato</item>
+        <item>@drawable/flat_white</item>
+        <item>@drawable/affogato</item>
+        <item>@drawable/frappuccino</item>
+        <item>@drawable/long_black</item>
+    </integer-array>
+
+    <!--    foods-->
+    <string-array name="food_name">
+        <item>Brownies</item>
+        <item>Croissant</item>
+        <item>Muffin</item>
+        <item>Donat</item>
+        <item>Scone</item>
+        <item>Cookies</item>
+        <item>Cheesecake</item>
+        <item>Churros</item>
+        <item>Bagel</item>
+        <item>Pretzel</item>
+        <item>Cinnamon Roll</item>
+        <item>Cake Pops</item>
+        <item>Cake Slice</item>
+        <item>Granola Bar</item>
+        <item>Pancakes</item>
+    </string-array>
+
+    <string-array name="food_price">
+        <item>25.000</item>
+        <item>28.000</item>
+        <item>26.000</item>
+        <item>24.000</item>
+        <item>27.000</item>
+        <item>29.000</item>
+        <item>32.000</item>
+        <item>32.000</item>
+        <item>26.000</item>
+        <item>28.000</item>
+        <item>34.000</item>
+        <item>30.000</item>
+        <item>38.000</item>
+        <item>32.000</item>
+        <item>26.000</item>
+    </string-array>
+
+    <string-array name="food_desc">
+        <item><![CDATA[Kue cokelat padat dengan tekstur lembut di dalamnya, biasanya disajikan dalam potongan persegi.]]></item>
+        <item><![CDATA[Roti yang terbuat dari lapisan adonan yang dilipat dan dilapisi mentega, memberikan rasa gurih dan renyah.]]></item>
+        <item><![CDATA[Kue kecil dengan tekstur yang lembut dan beragam varian rasa, seperti blueberry, cokelat, atau lemon.]]></item>
+        <item><![CDATA[Adonan yang digoreng hingga berwarna keemasan dengan lubang di tengahnya, sering disajikan dengan berbagai hiasan seperti gula halus atau selai.]]></item>
+        <item><![CDATA[Roti khas Inggris yang mirip dengan biskuit, dengan rasa manis atau gurih, biasanya disajikan dengan selai dan krim.]]></item>
+        <item><![CDATA[Kue kecil yang dipanggang dengan berbagai varian, seperti cokelat chip, kacang, atau oatmeal.]]></item>
+        <item><![CDATA[Kue tart yang terbuat dari campuran keju krim yang lembut, disajikan dengan berbagai topping seperti buah-buahan segar atau saus.]]></item>
+        <item><![CDATA[Camilan goreng berbentuk panjang dengan gula halus dan rempah-rempah, sering disajikan dengan saus cokelat atau karamel.]]></item>
+        <item><![CDATA[Roti berbentuk cincin dengan tekstur renyah di luar dan lembut di dalamnya, sering disajikan dengan berbagai toping seperti krim keju atau selai.]]></item>
+        <item><![CDATA[Adonan yang dipanggang dan berbentuk seperti simpul, dengan permukaan yang garing dan gurih, sering disajikan dengan saus mustard atau keju.]]></item>
+        <item><![CDATA[Gulungan adonan manis dengan lapisan gula kayu manis di dalamnya, sering disajikan dengan glasir gula.]]></item>
+        <item><![CDATA[Bolu yang dihias dan disajikan di atas tusuk sate, membuatnya mudah dinikmati dan sering disajikan dalam berbagai dekorasi lucu.]]></item>
+        <item><![CDATA[Potongan kue beragam rasa, seperti red velvet, carrot, atau tiramisu, sering dihias dengan krim dan buah-buahan.]]></item>
+        <item><![CDATA[Bar makanan ringan yang terbuat dari campuran biji-bijian panggang, kacang-kacangan, dan pemanis alami seperti madu atau sirup maple.]]></item>
+        <item><![CDATA[Kue dadar tebal yang digoreng dan disajikan dengan berbagai topping seperti sirup maple, buah-buahan segar, atau krim.]]></item>
+    </string-array>
+
+    <integer-array name="food_img">
+        <item>@drawable/brownies</item>
+        <item>@drawable/croissant</item>
+        <item>@drawable/muffin</item>
+        <item>@drawable/donat</item>
+        <item>@drawable/scone</item>
+        <item>@drawable/cookies</item>
+        <item>@drawable/cheesecake</item>
+        <item>@drawable/churros</item>
+        <item>@drawable/bagel</item>
+        <item>@drawable/pretzel</item>
+        <item>@drawable/cinnamon_roll</item>
+        <item>@drawable/cake_pops</item>
+        <item>@drawable/cake_slice</item>
+        <item>@drawable/granola_bar</item>
+        <item>@drawable/pancakes</item>
+    </integer-array>
+    <string name="title_activity_bottom_navigation">BottomNavigation</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="menu">Menu</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
