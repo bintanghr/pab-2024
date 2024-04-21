@@ -1,0 +1,14 @@
+<string-array name="history">
+<item>Coffee,5</item>
+<item>Coffee,3</item>
+<item>Coffee,7</item>
+<item>Food,2</item>
+<item>Coffee,3</item>
+<item>Food,2</item>
+<item>Food,8</item>
+<item>Coffee,2</item>
+<item>Food,9</item>
+<item>Coffee,3</item>
+<item>Coffee,2</item>
+<item>Coffee,7</item>
+</string-array>
