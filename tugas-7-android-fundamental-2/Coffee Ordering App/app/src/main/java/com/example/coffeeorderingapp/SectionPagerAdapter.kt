@@ -11,16 +11,9 @@ class SectionsPagerAdapter(activity: AppCompatActivity) : FragmentStateAdapter(a
     }
 
     override fun createFragment(position: Int): Fragment {
-//        var fragment: Fragment? = null
-//        when (position) {
-//            0 -> fragment = BeveragesFragment()
-//            1 -> fragment = BreadFragment()
-//        }
-//        return fragment as Fragment
-
-        val fragment = BeveragesFragment()
+        val fragment = MenuFragment()
         fragment.arguments = Bundle().apply {
-            putInt(BeveragesFragment.ARG_SECTION_NUMBER, position)
+            putInt(MenuFragment.ARG_SECTION_NUMBER, position)
         }
         return fragment
     }

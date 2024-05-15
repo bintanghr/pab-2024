@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Popular Movie List</string>
+    <string name="id_user">id user</string>
+    <string name="title">title</string>
+    <string name="overview">overview</string>
+    <string name="rating">rating</string>
+    <string name="release_date">release date</string>
+    <string name="movie_photo">movie photo</string>
+    <string name="show_more_movie">Show More Movie</string>
+    <string name="lorem_ipsum">Lorem Ipsum</string>
+</resources>

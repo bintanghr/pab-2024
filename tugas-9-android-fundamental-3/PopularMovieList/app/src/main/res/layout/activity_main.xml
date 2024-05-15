@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+
+    <ImageView
+        android:id="@+id/mostPopularPoster"
+        android:layout_width="350dp"
+        android:layout_height="480dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/movie_photo"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:id="@+id/mostPopularTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/mostPopularPoster"
+        app:layout_constraintStart_toStartOf="@id/mostPopularPoster"
+        app:layout_constraintEnd_toEndOf="@id/mostPopularPoster"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:text="@string/lorem_ipsum" />
+
+    <TextView
+        android:id="@+id/mostPopularRating"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/mostPopularTitle"
+        app:layout_constraintStart_toStartOf="@id/mostPopularPoster"
+        app:layout_constraintEnd_toEndOf="@id/mostPopularPoster"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/lorem_ipsum" />
+
+    <TextView
+        android:id="@+id/mostPopularOverview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/mostPopularRating"
+        app:layout_constraintStart_toStartOf="@id/mostPopularPoster"
+        app:layout_constraintEnd_toEndOf="@id/mostPopularPoster"
+        android:layout_marginTop="10dp"
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:justificationMode="inter_word"
+        android:textAlignment="center"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/lorem_ipsum"/>
+
+    <TextView
+        android:id="@+id/mostPopularReleaseDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/mostPopularOverview"
+        app:layout_constraintStart_toStartOf="@id/mostPopularPoster"
+        app:layout_constraintEnd_toEndOf="@id/mostPopularPoster"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/lorem_ipsum" />
+
+
+    <Button
+        android:id="@+id/btnShowMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/mostPopularReleaseDate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        android:text="@string/show_more_movie" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
