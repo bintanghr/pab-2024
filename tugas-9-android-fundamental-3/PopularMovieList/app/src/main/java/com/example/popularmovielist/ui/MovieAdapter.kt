@@ -13,13 +13,10 @@ import com.example.popularmovielist.R
 
 class MovieAdapter(private val context: Context, private var data: List<Movie>) :
     RecyclerView.Adapter<MovieAdapter.MovieViewHolder>() {
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MovieViewHolder {
         val itemView = LayoutInflater.from(context).inflate(R.layout.item_movie, parent, false)
         return MovieViewHolder(itemView)
     }
-
-
     override fun onBindViewHolder(holder: MovieViewHolder, position: Int) {
         val movie = data[position]
         val textRating = "⭐ " + movie.voteAverage.toString()

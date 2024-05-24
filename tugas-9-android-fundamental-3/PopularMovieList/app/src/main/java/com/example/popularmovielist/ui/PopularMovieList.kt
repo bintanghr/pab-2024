@@ -11,7 +11,6 @@ import com.example.popularmovielist.response.MovieResponse
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-
 class PopularMovieList : AppCompatActivity() {
     private lateinit var adapter: MovieAdapter
     override fun onCreate(savedInstanceState: Bundle?) {

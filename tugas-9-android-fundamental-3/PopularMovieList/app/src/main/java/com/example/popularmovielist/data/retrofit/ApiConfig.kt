@@ -14,18 +14,6 @@ class ApiConfig {
             }
             val client = OkHttpClient.Builder()
                 .addInterceptor(loggingInterceptor)
-//                .addInterceptor { chain ->
-//                    val original = chain.request()
-//                    val originalHttpUrl = original.url
-//
-//                    val url = originalHttpUrl.newBuilder()
-//                        .addQueryParameter("api_key", "5a89cae6a766d9e4328f259850cbc0d7")
-//                        .build()
-//
-//                    val requestBuilder = original.newBuilder().url(url)
-//                    val request = requestBuilder.build()
-//                    chain.proceed(request)
-//                }
                 .build()
             val retrofit = Retrofit.Builder()
                 .baseUrl("https://api.themoviedb.org/3/")

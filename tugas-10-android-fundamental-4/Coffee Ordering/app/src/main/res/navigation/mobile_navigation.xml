@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.coffeeordering.ui.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_menu"
+        android:name="com.example.coffeeordering.ui.menu.MenuTabLayoutFragment"
+        android:label="Menu"
+        tools:layout="@layout/fragment_menu_tab_layout">
+        <action
+            android:id="@+id/action_menuFragment_to_detailMenuFragment"
+            app:destination="@id/detailMenuFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailMenuFragment"
+        android:name="com.example.coffeeordering.ui.menu.DetailMenuFragment"
+        android:label="Detail Menu"
+        tools:layout="@layout/fragment_detail_menu" />
+
+    <fragment
+        android:id="@id/navigation_profile"
+        android:name="com.example.coffeeordering.ui.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_profileFragment_to_userPreferenceFragment"
+            app:destination="@id/fragment_form_user_preference" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_form_user_preference"
+        android:name="com.example.coffeeordering.ui.profile.FormUserPreferenceFragment"
+        android:label="User Preference"
+        tools:layout="@layout/fragment_form_user_preference">
+        <action
+            android:id="@+id/action_userPreferenceFragment_to_profileFragment"
+            app:destination="@id/navigation_profile" />
+    </fragment>
+</navigation>
