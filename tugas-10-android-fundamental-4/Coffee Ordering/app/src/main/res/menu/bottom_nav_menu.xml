@@ -15,4 +15,10 @@
         android:icon="@drawable/baseline_manage_accounts_24"
         android:title="@string/profile" />
 
+    <item
+        android:id="@+id/action_dark_mode"
+        android:title="@string/mode"
+        android:enabled="true"
+        android:checkable="false" />
+
 </menu>

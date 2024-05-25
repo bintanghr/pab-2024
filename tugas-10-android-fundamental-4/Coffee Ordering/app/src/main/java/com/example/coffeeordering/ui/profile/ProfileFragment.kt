@@ -1,5 +1,6 @@
 package com.example.coffeeordering.ui.profile
 
+import android.content.Context
 import android.content.Intent
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
@@ -11,6 +12,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.navigation.fragment.findNavController
 import com.example.coffeeordering.R
 import com.example.coffeeordering.databinding.FragmentProfileBinding
@@ -25,7 +27,6 @@ class ProfileFragment : Fragment(), View.OnClickListener {
     private val fileName = "user_image.png"
     private var isPreferenceEmpty = false
     private lateinit var userModel: UserModel
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -33,9 +34,8 @@ class ProfileFragment : Fragment(), View.OnClickListener {
         _binding = FragmentProfileBinding.inflate(inflater, container, false)
 
         binding.btnShare.setOnClickListener(this)
-        binding.imgProfile.setOnClickListener {
-            openGallery()
-        }
+        binding.btnSave.setOnClickListener(this)
+        binding.imgProfile.setOnClickListener(this)
 
         return binding.root
     }
@@ -46,8 +46,6 @@ class ProfileFragment : Fragment(), View.OnClickListener {
         mUserPreference = UserPreference(requireContext())
 
         showExistingPreference()
-
-        binding.btnSave.setOnClickListener(this)
     }
 
     private fun showExistingPreference() {
@@ -138,30 +136,16 @@ class ProfileFragment : Fragment(), View.OnClickListener {
             }
 
             R.id.btn_save -> {
-//                val intent = Intent(requireContext(), FormUserPreferenceActivity::class.java)
-//                when {
-//                    isPreferenceEmpty -> {
-//                        intent.putExtra(
-//                            FormUserPreferenceActivity.EXTRA_TYPE_FORM,
-//                            FormUserPreferenceActivity.TYPE_ADD
-//                        )
-//                        intent.putExtra("USER", userModel)
-//                    }
-//                    else -> {
-//                        intent.putExtra(
-//                            FormUserPreferenceActivity.EXTRA_TYPE_FORM,
-//                            FormUserPreferenceActivity.TYPE_EDIT
-//                        )
-//                        intent.putExtra("USER", userModel)
-//                    }
-//                }
-//                resultLauncher.launch(intent)
                 val bundle = Bundle().apply {
                     putParcelable("USER", userModel)
                     putInt(FormUserPreferenceFragment.EXTRA_TYPE_FORM, if (isPreferenceEmpty) FormUserPreferenceFragment.TYPE_ADD else FormUserPreferenceFragment.TYPE_EDIT)
                 }
 
                 findNavController().navigate(R.id.action_profileFragment_to_userPreferenceFragment, bundle)
+            }
+
+            R.id.img_profile -> {
+                openGallery()
             }
         }
     }
